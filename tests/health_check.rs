@@ -3,7 +3,7 @@ use learning_rust::configuration::{DatabaseSettings, get_configuration};
 use learning_rust::startup::run;
 use learning_rust::telemetry::{get_subscriber, init_subscriber};
 use once_cell::sync::Lazy;
-use secrecy::{ExposeSecret, Secret};
+use secrecy::ExposeSecret;
 use sqlx::{Connection, Executor, PgConnection, PgPool};
 use std::net::TcpListener;
 use uuid::Uuid;
